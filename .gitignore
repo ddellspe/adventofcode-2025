@@ -1,3 +1,5 @@
 *.egg-info
 *.pyc
 /.env
+/day*/input.txt
+/venv
