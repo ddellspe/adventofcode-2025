@@ -12,7 +12,7 @@ INPUT_TXT = os.path.join(os.path.dirname(__file__), 'input.txt')
 
 def compute(s: str) -> int:
     splits = 0
-    grid: list[str] = [line for line in s.splitlines()]
+    grid: list[str] = [*s.splitlines()]
     beams: set[int] = {grid[0].index('S')}
     for line in grid[1:]:
         next: set[int] = set()
